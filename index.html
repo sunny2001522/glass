@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
-    />
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+/>
   </head>
   <body class="w-screen h-screen bg-gray-100">
     <div class="header"></div>
     <section
-      class="banner bg-[url('./img/home-header-sm.png')] md:bg-[url('./img/home-header.png')] bg-cover h-[786px] flex flex-col justify-center"
+      class="banner flex flex-col justify-center h-[786px] bg-cover"
+      style="background-image: url('./img/home-header.png')"
     >
+      <style>
+        @media (max-width: 768px) {
+          .banner {
+            background-image: url("./img/home-header-sm.png");
+          }
+        }</style
+      >" >
       <div
         class="text-end items-center px-4 md:px-12"
         style="max-width: 1296px"
