@@ -9,57 +9,12 @@
       href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
   </head>
-  <body class="w-screen h-screen bg-gray-100">
-    <nav class="bg-red-800 md:px-12">
-      <div
-        class="md:flex justify-between items-center flex-wrap mx-auto"
-        style="max-width: 1296px"
-      >
-        <h1 class="py-4">
-          <a href="index.html">
-            <img src="../img/logo-white.png" alt="glass眼鏡" class="h-8" />
-          </a>
-        </h1>
-        <ul class="grid grid-cols-2 md:flex text-center">
-          <li
-            class="border border-white md:border-0 md:border-transparent text-center py-4"
-          >
-            <a
-              href="#"
-              class="py-4 px-8 rounded-md text-white hover:text-gray-900"
-              > 系列鏡框</a
-            >
-          </li>
-          <li
-            class="border border-white md:border-0 md:border-transparent text-center py-4"
-          >
-            <a
-              href="#"
-              class="py-4 px-8 rounded-md text-white hover:text-gray-900"
-              >門市據點</a
-            >
-          </li>
-          <li
-            class="border border-white md:border-0 md:border-transparent text-center py-4"
-          >
-            <a
-              href="#"
-              class="py-4 px-8 rounded-md text-white hover:text-gray-900"
-              >部落格</a
-            >
-          </li>
-          <li
-            class="border border-white md:border-0 md:border-transparent text-center py-4"
-          >
-            <a href="#" class="px-8 text-white hover:text-gray-900">常見問題</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <body class="w-screen h-screen">
+    <div class="header"></div>
 
     <!-- products -->
     <section
-      class="products py-42 mb-20 mx-3 md:mx-12 mb:px-10"
+      class="products py-42 mb-20 px-3 md:px-12 mx-auto items-center"
       style="max-width: 1296px"
     >
       <h2
@@ -69,95 +24,49 @@
       </h2>
 
       <form action="index.html" class="mb-6">
-        <label for="region">選擇地區</label>
+        <label for="eachStore">選擇地區</label>
         <select
-          name="region"
+          name="eachStore"
           class="border border-gray-200 ms-2 py-2 ps-3 pe-56"
         >
-          <option value="all" class="hover:bg-red-700" selected>台灣</option>
-          <option value="台北" class="hover:bg-red-700">台北市</option>
-          <option value="台中" class="hover:bg-red-700">台中市</option>
-          <option value="高雄" class="hover:bg-red-700">高雄市</option>
+          <option value="台北中山旗艦店" class="hover:bg-red-700" selected>
+            台北中山旗艦店
+          </option>
+          <option value="台北綠園店" class="hover:bg-red-700">
+            台北綠園店
+          </option>
+          <option value="台中清水旗艦店" class="hover:bg-red-700">
+            台中清水旗艦店
+          </option>
+          <option value="高雄中正形象店" class="hover:bg-red-700">
+            高雄中正形象店
+          </option>
+          <option value="高雄夢時代店" class="hover:bg-red-700">
+            高雄夢時代店
+          </option>
         </select>
       </form>
 
-      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 store">
-        123
-      </ul>
+      <section class="storeMap lg:flex"></section>
     </section>
-
+    <div id="footer"></div>
     <!-- footer -->
-    <footer class="bg-red-700 text-white">
-      <div class="mx-auto py-42 px-3 mb:px-10" style="max-width: 1296px">
-        <div class="border-b border-white pb-8 mb-8">
-          <div class="flex justify-between">
-            <div class="column">
-              <ul class="hidden md:flex justify-between md:pb-6">
-                <li class="text-center">
-                  <a href="#" class="py-4 pe-8 text-white hover:text-gray-900"
-                    >首頁</a
-                  >
-                </li>
-                <li class="text-center">
-                  <a href="#" class="py-4 pe-8 text-white hover:text-gray-900"
-                    >系列鏡框</a
-                  >
-                </li>
-                <li class="text-center">
-                  <a href="#" class="py-4 pe-8 text-white hover:text-gray-900"
-                    >門市據點</a
-                  >
-                </li>
-                <li class="text-center">
-                  <a href="#" class="py-4 pe-8 text-white hover:text-gray-900"
-                    >部落格</a
-                  >
-                </li>
-                <li class="text-center">
-                  <a href="#" class="py-4 pe-8 text-white hover:text-gray-900"
-                    >常見問題</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li
-                  class="text-base md:text-4xl lg:text-5xl pb-2 md:pb-2 lg:pb-4"
-                >
-                  <a href="tel:+886-0800-000-000"
-                    ><i class="bi bi-telephone pe-4"></i>0800-000-000</a
-                  >
-                </li>
-                <li class="text-base md:text-4xl lg:text-5xl">
-                  <a href="malito:glasses@business.com"
-                    ><i class="bi bi-envelope pe-4"></i>glasses@business.com</a
-                  >
-                </li>
-              </ul>
-            </div>
+    <div class="footer"></div>
 
-            <ul class="flex">
-              <li class="pe-8 text-2xl md:text-4xl lg:text-5xl">
-                <a href=""><i class="bi bi-facebook"></i></a>
-              </li>
-              <li class="pe-8 text-2xl md:text-4xl lg:text-5xl">
-                <a href=""><i class="bi bi-instagram"></i></a>
-              </li>
-              <li class="text-2xl md:text-4xl lg:text-5xl">
-                <a href=""><i class="bi bi-line"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="md:flex justify-between">
-          <p>Copyright © 2020 Glasses.All rights reserved.</p>
-          <div class="mt-2 md:mt-0 md:flex">
-            <p>隱私權政策</p>
-            <p class="mt-2 md:mt-0 md:ps-4">服務條款</p>
-          </div>
-        </div>
-        
-      </div>
-    </footer>
-    <script src="../script/store.js"></script>
+    <!-- 引入 JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script/store1.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".header").load("header.html");
+        $(".footer").load("footer.html");
+        console.log("Header 和 Footer 載入成功！");
+      });
+    </script>
   </body>
 </html>
