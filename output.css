@@ -612,15 +612,6 @@ video {
   grid-column-start: 2;
 }
 
-.\!m-5 {
-  margin: 1.25rem !important;
-}
-
-.\!mx-6 {
-  margin-left: 1.5rem !important;
-  margin-right: 1.5rem !important;
-}
-
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -629,11 +620,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .mb-10 {
@@ -963,16 +949,12 @@ video {
      object-fit: cover;
 }
 
-.\!p-5 {
-  padding: 1.25rem !important;
+.\!p-2 {
+  padding: 0.5rem !important;
 }
 
 .p-4 {
   padding: 1rem;
-}
-
-.\!p-2 {
-  padding: 0.5rem !important;
 }
 
 .p-6 {
@@ -987,6 +969,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .px-8 {
@@ -1012,11 +999,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pb-1 {
@@ -1427,6 +1409,22 @@ video {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:px-0 {
