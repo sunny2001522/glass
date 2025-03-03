@@ -4,7 +4,7 @@ let data = [
     phone: "(02)000-1234",
     hours: "10:00-21:00",
     address: "台北市中山區南京東路25巷2-1號",
-    link: "../src/store1.html?store=台北中山旗艦店",
+    link: "../store1.html?store=台北中山旗艦店",
     img: "../img/store-1.png",
   },
   {
@@ -12,7 +12,7 @@ let data = [
     phone: "(02)000-2345",
     hours: "10:00-21:00",
     address: "台北市中正區復興南路132-1號",
-    link: "../src/store1.html?store=台北綠園店",
+    link: "../store1.html?store=台北綠園店",
     img: "../img/store-2.png",
   },
   {
@@ -20,7 +20,7 @@ let data = [
     phone: "(02)000-1234",
     hours: "10:00-21:00",
     address: "台中市清水區經南一路23號8樓",
-    link: "../src/store1.html?store=台中清水旗艦店",
+    link: "../store1.html?store=台中清水旗艦店",
     img: "../img/store-3.png",
   },
   {
@@ -28,7 +28,7 @@ let data = [
     phone: "(07)000-2345",
     hours: "10:00-21:00",
     address: "高雄市苓雅區中正路38號12樓",
-    link: ".//src/store1.html?store=高雄中正形象店",
+    link: ".//store1.html?store=高雄中正形象店",
     img: "../img/store-4.png",
   },
   {
@@ -36,7 +36,7 @@ let data = [
     phone: "(07)000-1234",
     hours: "10:00-21:00",
     address: "高雄市前鎮區中華一路63號6樓",
-    link: "../src/store1.html?store=高雄夢時代店",
+    link: "../store1.html?store=高雄夢時代店",
     img: "../img/store-5.png",
   },
 ];

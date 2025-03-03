@@ -1,6 +1,6 @@
 let blogData = [
   {
-    img: "../img/blog-1.png",
+    img: "./img/blog-1.png",
     title: "情人特別企劃",
     enTitle: "2020 Valentine's Special",
     date: "2020/02/14",
@@ -9,7 +9,7 @@ let blogData = [
     link: "#",
   },
   {
-    img: "../img/blog-2.png",
+    img: "./img/blog-2.png",
     title: "街頭潮人訪問",
     enTitle: "Street Interview",
     date: "2020/02/02",
@@ -18,7 +18,7 @@ let blogData = [
     link: "#",
   },
   {
-    img: "../img/blog-3.png",
+    img: "./img/blog-3.png",
     title: "春季新品上市",
     enTitle: "New Selection",
     date: "2020/02/02",
@@ -27,7 +27,7 @@ let blogData = [
     link: "#",
   },
   {
-    img: "../img/blog-4.png",
+    img: "./img/blog-4.png",
     title: "設計師獨享鏡框優惠",
     enTitle: "Sales for Designer",
     date: "2020/01/18",
@@ -36,7 +36,7 @@ let blogData = [
     link: "#",
   },
   {
-    img: "../img/blog-5.png",
+    img: "./img/blog-5.png",
     title: "抵抗夏日大作戰",
     enTitle: "Summer Special",
     date: "2019/08/07",
