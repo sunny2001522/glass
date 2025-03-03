@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="w-screen h-screen bg-gray-100">
+    <div class="header"></div>
+
+    <!-- products -->
+    <section
+      class="products py-42 mb-20 mx-3 md:mx-12 mb:px-10"
+      style="max-width: 1296px"
+    >
+      <h2
+        class="font-medium text-2xl md:text-4xl lg:text-5xl border-l-8 border-red-700 mt-24 mb-6 ps-4"
+      >
+        門市據點
+      </h2>
+
+      <form action="index.html" class="mb-6">
+        <label for="region">選擇地區</label>
+        <select
+          name="region"
+          class="border border-gray-200 ms-2 py-2 ps-3 pe-56"
+        >
+          <option value="all" class="hover:bg-red-700" selected>台灣</option>
+          <option value="台北" class="hover:bg-red-700">台北市</option>
+          <option value="台中" class="hover:bg-red-700">台中市</option>
+          <option value="高雄" class="hover:bg-red-700">高雄市</option>
+        </select>
+      </form>
+
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 store">
+        123
+      </ul>
+    </section>
+    <div id="footer"></div>
+    <!-- footer -->
+    <div class="footer"></div>
+
+    <!-- 引入 JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script/store.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".header").load("header.html");
+        $(".footer").load("footer.html");
+        console.log("Header 和 Footer 載入成功！");
+      });
+    </script>
+  </body>
+</html>

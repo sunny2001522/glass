@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="w-screen h-screen bg-gray-100">
+    <div class="header"></div>
+
+    <nav class="hidden md:block w-full bg-red-900 text-white py-4">
+      <div
+        class="hidden md:px-12 md:flex justify-between mx-auto items-center"
+        style="max-width: 1296px"
+      >
+        <ul class="flex space-x-8">
+          <li><a href="#" class="hover:underline pe-6">最新消息</a></li>
+          <li><a href="#" class="hover:underline pe-6">特別企劃</a></li>
+          <li><a href="#" class="hover:underline pe-6">新品上市</a></li>
+          <li><a href="#" class="hover:underline pe-6">鏡框小知識</a></li>
+        </ul>
+        <form blogSearch>
+          <input
+            name="search"
+            type="text"
+            class="text-black !p-2 appearance-none focus-within:ring-red-400 !important outline-none"
+            placeholder="請輸入搜尋內容……"
+          />
+          <button type="submit hover:opacity-75 px-6">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- blog -->
+    <section
+      class="py-42 mb-20 mx-3 md:mx-12 mb:px-10"
+      style="max-width: 1296px"
+    >
+      <h2
+        class="font-medium text-2xl md:text-4xl lg:text-5xl border-l-8 border-red-700 mt-24 mb-6 ps-4"
+      >
+        部落格
+      </h2>
+
+      <ul class="blog"></ul>
+    </section>
+    <!-- page -->
+    <ul class="flex justify-center mb-10 md:mb-20">
+      <li
+        class="border py-3 px-4 hover:bg-red-700 hover:text-white active:text-white text-nowrap disabled:bg-gray-100"
+      >
+        <a href="">上一頁</a>
+      </li>
+      <li
+        class="border py-3 px-4 hover:bg-red-700 hover:text-white aria-[current=page]:bg-gray-700 aria-[current=page]:text-white"
+        aria-current="page"
+      >
+        <a href="">1</a>
+      </li>
+      <li
+        class="border py-3 px-4 hover:bg-red-700 hover:text-white active:text-white"
+      >
+        <a href="">2</a>
+      </li>
+      <li
+        class="border py-3 px-4 hover:bg-red-700 hover:text-white active:text-white"
+      >
+        <a href="">3</a>
+      </li>
+      <li
+        class="border py-3 px-4 hover:bg-red-700 hover:text-white active:text-white"
+      >
+        <a href="">4</a>
+      </li>
+      <li
+        class="border py-3 px-4 hover:bg-red-700 hover:text-white active:text-white"
+      >
+        <a href="">5</a>
+      </li>
+      <li
+        class="border py-3 px-4 hover:bg-red-700 hover:text-white active:text-white text-nowrap"
+      >
+        <a href="">下一頁</a>
+      </li>
+    </ul>
+    <!-- footer -->
+    <div class="footer"></div>
+    <!-- scripts -->
+    <script src="../script/blog.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script/store.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".header").load("header.html");
+        $(".footer").load("footer.html");
+        console.log("Header 和 Footer 載入成功！");
+      });
+    </script>
+  </body>
+</html>
